@@ -1,0 +1,35 @@
+.header {
+  background: linear-gradient(135deg, var(--button-bg), var(--button-hover));
+  color: white;
+  padding: 2.5rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header_icon {
+  font-size: 3rem;
+}
+
+.header_content h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem 0;
+}
+
+.header_content p {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 2rem 1.5rem;
+  }
+
+  .header_content h1 {
+    font-size: 1.5rem;
+  }
+}
+

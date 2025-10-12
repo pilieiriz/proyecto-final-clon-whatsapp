@@ -29,9 +29,9 @@ const AppRouter = () => {
                 <Route 
                     path="/help" 
                     element={
-                        <ProtectedRoute>
+                        <PublicRoute>   
                             <Help />
-                        </ProtectedRoute>
+                        </PublicRoute>
                     } 
                 />
                 <Route path="*" element={<NotFound />} />

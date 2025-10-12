@@ -1,0 +1,36 @@
+.tech_card {
+  background: var(--input-bg);
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.2s;
+}
+
+.tech_card:hover {
+  background: var(--border-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.tech_icon {
+  font-size: 2rem;
+  color: var(--button-bg);
+}
+
+.tech_info {
+  flex: 1;
+}
+
+.tech_name {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.tech_version {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+

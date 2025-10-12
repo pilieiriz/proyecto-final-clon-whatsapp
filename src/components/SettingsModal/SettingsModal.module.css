@@ -1,7 +1,13 @@
-.settings__section {
+.settings__container {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.settings__section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .settings__section_title {
@@ -74,3 +80,43 @@
   outline-offset: 3px;
 }
 
+.settings__option_clickable {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: var(--input-bg);
+  border-radius: 0.75rem;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.settings__option_clickable:hover {
+  background-color: var(--border-color);
+  transform: translateX(4px);
+}
+
+.settings__option_clickable:active {
+  transform: scale(0.98);
+}
+
+.settings__option_with_icon {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.settings__option_icon {
+  font-size: 1.5rem;
+  color: var(--button-bg);
+}
+
+.settings__chevron {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  transition: transform 0.2s;
+}
+
+.settings__option_clickable:hover .settings__chevron {
+  transform: translateX(4px);
+}
