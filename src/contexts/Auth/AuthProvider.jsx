@@ -13,8 +13,8 @@ const AuthProvider = ({ children }) => {
     const isAuthenticated = user !== null;
 
 
-    const login = (nombre, email, contraseña) => {
-        const userData = { nombre, email, contraseña };
+    const login = ({email, password}) => {
+        const userData = { email, password };
         setUser(userData);
         saveUserToStorage(userData);
     }
