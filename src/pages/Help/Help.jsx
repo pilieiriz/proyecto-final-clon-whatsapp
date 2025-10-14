@@ -1,5 +1,5 @@
 import { LuMessageSquare, LuCode, LuTrendingUp, LuCircleCheck, LuSend, LuLock, LuPalette } from 'react-icons/lu';
-import { FaReact, FaNode } from 'react-icons/fa';
+import { FaReact } from 'react-icons/fa';
 import { SiVite, SiReactrouter } from 'react-icons/si';
 import BackButton from './components/BackButton/BackButton';
 import HelpHeader from './components/HelpHeader/HelpHeader';
@@ -55,7 +55,7 @@ const Help = () => {
                             <TechCard icon={FaReact} name="React" version="v19.1.1" />
                             <TechCard icon={SiVite} name="Vite" version="v7.1.7" />
                             <TechCard icon={SiReactrouter} name="React Router" version="v7.9.4" />
-                            <TechCard icon={FaNode} name="React Icons" version="v5.5.0" />
+                            <TechCard icon={FaReact} name="React Icons" version="v5.5.0" />
                         </div>
                         <p className={styles.help__section_content}>
                             <strong>Arquitectura:</strong> Context API para gestión de estado global (Auth y Theme),
