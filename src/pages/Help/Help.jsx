@@ -44,6 +44,11 @@ const Help = () => {
                                 title="Personalización"
                                 description="Modo claro y oscuro disponibles. Cambia el tema desde el panel de configuración según tus preferencias visuales."
                             />
+                            <FeatureListItem
+                                icon={LuPalette}
+                                title="Personalización"
+                                description="Cambio de fondo del chat según preferencia del usuario."
+                            />
                         </ul>
                     </HelpSection>
 
