@@ -58,7 +58,7 @@ const Help = () => {
                             <TechCard icon={FaIcons} name="React Icons" version="v5.5.0" />
                         </div>
                         <p className={styles.help__section_content}>
-                            <strong>Arquitectura:</strong> Context API para gestión de estado global (Auth y Theme),
+                            <strong>Arquitectura:</strong> Context API para gestión de estado global (Auth, Theme y Contacts),
                             CSS Modules para estilos aislados, y React Hooks para lógica reutilizable.
                             Sistema de rutas protegidas implementado con React Router DOM.
                         </p>
