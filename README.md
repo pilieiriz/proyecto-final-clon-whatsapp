@@ -1,16 +1,22 @@
-# React + Vite
+# Proyecto: Clon de WhatsApp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto consiste en el desarrollo de un clon sencillo de WhatsApp, creado como parte del curso de Desarrollo Frontend de la UTN. 
+El objetivo principal fue replicar las funcionalidades básicas de la aplicación original.
 
-Currently, two official plugins are available:
+# Funcionalidades implementadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Inicio de sesión con validación de usuario.
 
-## React Compiler
+- Cambio entre modo claro y oscuro para una mejor experiencia visual.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+- Navegación protegida, restringiendo el acceso a usuarios no autenticados.
 
-## Expanding the ESLint configuration
+- Pantalla de ayuda con información básica.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Lista de chats con buscador integrado.
+
+- Pantalla de chat con interfaz similar a la original.
+
+- Cambio de fondo del chat según preferencia del usuario.
+
+- Cierre de sesión y redirección segura.
