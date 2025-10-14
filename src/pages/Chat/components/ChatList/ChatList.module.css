@@ -1,0 +1,189 @@
+.chatList {
+  width: 100%;
+  max-width: 420px;
+  background-color: var(--bg-secondary);
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+}
+
+.chatList__header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 1.5rem 1rem;
+  background-color: var(--bg-secondary);
+}
+
+.chatList__menuButton {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.25rem;
+  transition: color 0.2s;
+}
+
+.chatList__menuButton:hover {
+  color: var(--text-primary);
+}
+
+.chatList__title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  flex: 1;
+}
+
+.chatList__actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.chatList__actionButton {
+  background-color: var(--input-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0.625rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chatList__actionButton:hover {
+  color: var(--button-bg);
+  background-color: var(--bg-primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.chatList__search {
+  padding: 0 1.5rem 1rem;
+  background-color: var(--bg-secondary);
+}
+
+.chatList__searchWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.chatList__searchIcon {
+  position: absolute;
+  left: 1rem;
+  color: var(--text-secondary);
+  font-size: 1.125rem;
+  pointer-events: none;
+}
+
+.chatList__searchInput {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.75rem;
+  background-color: var(--input-bg);
+  border: 2px solid var(--border-color);
+  border-radius: 0.5rem;
+  font-size: 0.9375rem;
+  color: var(--text-primary);
+  outline: none;
+  transition: all 0.2s;
+}
+
+.chatList__searchInput:focus {
+  border-color: var(--button-bg);
+  box-shadow: 0 0 0 3px rgba(37, 211, 102, 0.1);
+}
+
+.chatList__searchInput::placeholder {
+  color: var(--text-secondary);
+}
+
+.chatList__contacts {
+  flex: 1;
+  overflow-y: auto;
+  background-color: var(--bg-secondary);
+}
+
+.chatList__contacts::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chatList__contacts::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chatList__contacts::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 3px;
+}
+
+.chatList__contacts::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+}
+
+.chatList__overlay {
+  display: none;
+}
+
+.chatList__overlay--disabled {
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .chatList__overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9;
+    animation: fadeIn 0.3s ease;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  .chatList {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    max-width: 85%;
+    width: 100%;
+    z-index: 10;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+    border-radius: 0;
+  }
+
+  .chatList:not(.chatList--open) {
+    transform: translateX(-100%);
+  }
+
+  .chatList__menuButton {
+    display: flex;
+  }
+
+  .chatList__header {
+    padding: 1rem 1.25rem;
+  }
+
+  .chatList__search {
+    padding: 0 1rem 1rem;
+  }
+}
+

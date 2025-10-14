@@ -1,0 +1,17 @@
+.chat {
+  display: flex;
+  height: 100vh;
+  background-color: var(--bg-primary);
+  overflow: hidden;
+  padding: 1.5rem;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .chat {
+    position: relative;
+    padding: 0;
+    gap: 0;
+  }
+}
+
